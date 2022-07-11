@@ -27,7 +27,13 @@ Ao final de cada aula é posto em prática todo o conhecimento adquirido em úni
 
 Construção da [tabela](https://markdown.net.br/sintaxe-estendida/#:~:text=Para%20criar%20uma%20tabela%20em,processador%20Markdown%20entenda%20a%20formata%C3%A7%C3%A3o.)
 
-Regras [MarkDown](https://github.com/DavidAnson/markdownlint/blob/v0.25.1/doc/Rules.md#md033)
+Regras do MarkDown [Clique aqui](https://github.com/DavidAnson/markdownlint/blob/v0.25.1/doc/Rules.md#md033)
+
+GitHub Docs - [Clique aqui](https://docs.github.com/pt)
+
+Guias do git - [Clique aqui](https://github.com/git-guides)
+
+Comandos do Git - [Clique aqui](https://comandosgit.github.io/)
 
 ### Playlist You Tube
 
