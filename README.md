@@ -17,6 +17,16 @@ Ao final de cada aula é posto em prática todo o conhecimento adquirido em úni
 
 - Melhor linguagem de programação, segundo [eXcript](https://youtu.be/hzb3dL9luf0)
 
+| Posição  | Linguagem | Plugin |
+| :---    | :----:   | ---:    |
+| 1º    | Java Scrip   | xx |
+| 2º    | [Java](https://www.java.com/pt-BR/) | [Spring](https://spring.io/) |
+| 3º    | C#   | xx |
+| 4º    | [Python](https://www.python.org/)  | [Panda](https://pandas.pydata.org/) |
+| 5º    | Php   | xx |
+
+Construção da [tabela](https://markdown.net.br/sintaxe-estendida/#:~:text=Para%20criar%20uma%20tabela%20em,processador%20Markdown%20entenda%20a%20formata%C3%A7%C3%A3o.)
+
 ### Playlist You Tube
 
 - Tomorrowland 2021 | Covers & Mashup [#33](https://youtu.be/5adRYMFAAGY)
