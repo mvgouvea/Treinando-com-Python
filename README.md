@@ -12,8 +12,10 @@ Ao final de cada aula é posto em prática todo o conhecimento adquirido em úni
 
 ## eXcript - Python
 
-Segue as atividades conforme
+- Segue as atividades conforme
 [eXcript](https://www.youtube.com/watch?v=j94IGZmwtYI&list=PLesCEcYj003QxPQ4vTXkt22-E11aQvoVj)
+
+- Melhor linguagem de programação, segundo [eXcript](https://youtu.be/hzb3dL9luf0)
 
 ### Playlist You Tube
 
