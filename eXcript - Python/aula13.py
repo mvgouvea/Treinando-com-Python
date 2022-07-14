@@ -12,7 +12,7 @@ print("Tipo real: %.3f" %num_dec)
 #concactena ambos valores string com sinal de adição, em seguida utiliza o cast para conversão.
 print("o valor é: "+ str(num_int))
 #para concactena é necessário ambos ser do mesmo tipo
-print("#-------------------#")
+print("#--------Aula 14-----------#")
 print("Concactenando strings", val_str)
 print("Concactenando strings %s" %val_str)
 print("Concactenando strings "+ val_str)
