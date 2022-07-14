@@ -17,7 +17,7 @@ if escolha == 1:
     print("Terá um conhecimento geral da linguagens, porém, não conhecerás a fundo NENHUMA")
     print("----------------------------")
     print("**Se o foco é ter conhecimento geral: Estude várias linguagens")
-elif escolha == 2:
+if escolha == 2:
     #Importância da indentação
     print("É importante estudar uma linguagem")
     print("-----------Conceito----------")
@@ -25,5 +25,5 @@ elif escolha == 2:
     print("----------Construções----------")
 if escolha == 0:
     print("Finalizado")
-else:
-    print("Número não corrrespondente")
+#else:
+#   print("Número não corrrespondente")
