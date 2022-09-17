@@ -18,35 +18,44 @@ reqEuro = Request(
     headers={'User-Agent': 'Mozilla/5.0'}
 )
 
-
 # content = urllib.request.urlopen("req").read()
 #Temperatura Máxima
-content = urlopen(req).read()
-content = str(content)
-find = 'max-temp-1">'
-posicao = int(content.index(find) + len(find))
-maxima = content[posicao: posicao + 2]
+def getTemperatura():
+    content = urlopen(req).read()
+    content = str(content)
+    find = 'max-temp-1">'
+    posicao = int(content.index(find) + len(find))
+    maxima = content[posicao: posicao + 2]
+    maxima = maxima + "º"
 
-#Temperatura Mínima
-content = urlopen(req).read()
-content = str(content)
-find = 'min-temp-1">'
-posicao = int(content.index(find) + len(find))
-minima = content[posicao: posicao + 2]
+    #Temperatura Mínima
+    content = urlopen(req).read()
+    content = str(content)
+    find = 'min-temp-1">'
+    posicao = int(content.index(find) + len(find))
+    minima = content[posicao: posicao + 2]
+    minima = str(minima + "º")
+    return [maxima, minima]
 
-#Cotação Dolar
-content = urlopen(reqDolar).read()
-content = str(content)
-find = '<input type="hidden" value="'
-posicao = int(content.index(find) + len(find))
-dolar = content[ posicao : posicao  + 4]
+temp = getTemperatura()
 
-#Cotação Euro
-content = urlopen(reqEuro).read()
-#content = urllib.request.urlopen("https://www.melhorcambio.com/euro-hoje").read()
-content = str(content)
-posicao = int(content.index(find) + len(find))
-euro = content[ posicao : posicao  + 4]
+def getDolar():
+    #Cotação Dolar
+    content = urlopen(reqDolar).read()
+    content = str(content)
+    find = '<input type="hidden" value="'
+    posicao = int(content.index(find) + len(find))
+    dolar = content[ posicao : posicao  + 4]
+    return dolar
+
+def getEuro():
+    #Cotação Euro
+    content = urlopen(reqEuro).read()
+    content = str(content)
+    find = '<input type="hidden" value="'
+    posicao = int(content.index(find) + len(find))
+    euro = content[ posicao : posicao  + 4]
+    return euro
 
 print("------------------------")
 print("1 - Temperatura atual: ")
@@ -58,11 +67,11 @@ while escolha != 0 :
     if escolha < 0 or escolha > 2:
         print("Opção inválida!! Favor escolha outra")
     elif escolha == 1:
-        print("Temperatura Máxima: "+str(maxima),"º")
-        print("Temperatura Mínima: "+str(minima),"º")
+        print("Temperatura Máxima: "+ temp[0])
+        print("Temperatura Mínima: "+ temp[1])
     elif escolha == 2:
-        print("Dolar hoje: "+ dolar)
-        print("Euro hoje: " + euro)
+        print("Dolar hoje: "+ getDolar())
+        print("Euro hoje: " + getEuro())
     print("------------------------")
     print("Escolha a opção desejada")
     print("1 - Temperatura atual: ")
@@ -70,4 +79,4 @@ while escolha != 0 :
     print("0 - Sair")
     escolha = int(input("Escolha a opção desejada: "))
     print("------------------------")
-print("Você escolheu a opção( %i )Obrigado volte sempre "%(escolha))
+print("Você escolheu a opção (%i). Obrigado volte sempre "%(escolha))
